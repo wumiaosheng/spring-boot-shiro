@@ -6,7 +6,6 @@ import java.util.UUID;
 
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 
-import com.neo.common.util.EHDateTimeSerializer;
 import com.neo.framwork.util.DateUtil;
 
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)

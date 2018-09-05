@@ -1,14 +1,17 @@
 package com.neo.hapi.service;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.neo.common.entity.ReturnStatus;
 import com.neo.hapi.dao.HapUserAccountDao;
 import com.neo.hapi.entity.HapUserAccount;
 
+@Service
 public class HapUserAccoutServiceImpl implements HapUserAccoutService{
   
 	@Autowired
@@ -36,8 +39,10 @@ public class HapUserAccoutServiceImpl implements HapUserAccoutService{
 	}
 
 	@Override
-	public List<HapUserAccount> find(Map map) {
+	public List<HapUserAccount> findEnable() {
 		// TODO Auto-generated method stub
+		Map<String, String> map=new HashMap<String, String>();
+		map.put("enable", "1");
 		return hapUserAccountDao.find(map);
 	}
 }

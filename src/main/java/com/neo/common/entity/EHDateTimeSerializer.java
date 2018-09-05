@@ -1,4 +1,4 @@
-package com.neo.common.util;
+package com.neo.common.entity;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;

@@ -14,6 +14,6 @@ public interface HapUserAccoutService {
 	
 	public HapUserAccount findById(long  id);
 	
-	public List<HapUserAccount> find(Map map);
+	public List<HapUserAccount> findEnable();
 	
 }
