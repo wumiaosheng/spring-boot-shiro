@@ -26,5 +26,8 @@ spring:
        cache: false
        #mode: LEGACYHTML5
 
-#mybatis:
-  #mapper-locations: classpath*:/zytrade.service.mobile/*.xml
+mybatis:
+  mapper-locations: classpath:mapping/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.neo.hapi.entity  # 注意：对应实体类的路径
+  
+  

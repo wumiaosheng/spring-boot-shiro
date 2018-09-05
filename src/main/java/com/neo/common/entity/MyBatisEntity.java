@@ -4,7 +4,8 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.UUID;
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
+
 import com.neo.common.util.EHDateTimeSerializer;
 import com.neo.framwork.util.DateUtil;
 
