@@ -5,11 +5,8 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
-
-import com.osg.entity.FlipInfo;
 
 import com.neo.hapi.entity.HapUserAccount;
 
@@ -30,7 +27,7 @@ public interface HapUserAccountDao {
 	@Select("select * from hap_user_account")
 	public List<HapUserAccount> findAll();
 
-	public List<HapUserAccount> findByPage(FlipInfo<HapUserAccount> fpi);
+	//public List<HapUserAccount> findByPage(FlipInfo<HapUserAccount> fpi);
 	
 	public List<HapUserAccount> findByMap(Map param);
 	

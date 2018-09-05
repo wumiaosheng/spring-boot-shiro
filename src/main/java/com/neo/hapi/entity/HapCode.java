@@ -1,6 +1,7 @@
 package com.neo.hapi.entity;
 
-import com.osg.entity.MyBatisEntity;
+import com.neo.common.entity.MyBatisEntity;
+
 
 public class HapCode extends MyBatisEntity {
 
