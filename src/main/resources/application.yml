@@ -21,15 +21,6 @@ spring:
     filters: stat,wall,slf4j
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     useGlobalDataSourceStat: true
-  redis:
-    host: 10.100.0.143
-    password: 
-    port: 6379
-    pool:
-      max-idle: 100
-      min-idle: 1
-      max-active: 1000
-      max-wait: -1
       
   thymeleaf:
        cache: false

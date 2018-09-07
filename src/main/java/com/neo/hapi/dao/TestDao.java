@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
+import com.neo.common.entity.FlipInfo;
 import com.neo.hapi.entity.Test;
 
 public interface TestDao {
@@ -27,7 +28,7 @@ public interface TestDao {
 	@Select("select * from test")
 	public List<Test> findAll();
 
-	//public List<Test> findByPage(FlipInfo<Test> fpi);
+	public List<Test> findByPage(FlipInfo<Test> fpi);
 	
 	public List<Test> findByMap(Map param);
 	

@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
+import com.neo.common.entity.FlipInfo;
 import com.neo.hapi.entity.HapCode;
 
 public interface HapCodeDao {
@@ -27,7 +28,7 @@ public interface HapCodeDao {
 	@Select("select * from hap_code")
 	public List<HapCode> findAll();
 
-	//public List<HapCode> findByPage(FlipInfo<HapCode> fpi);
+	public List<HapCode> findByPage(FlipInfo<HapCode> fpi);
 	
 	public List<HapCode> findByMap(Map param);
 	
