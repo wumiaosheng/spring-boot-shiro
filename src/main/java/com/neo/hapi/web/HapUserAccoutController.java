@@ -7,11 +7,9 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.neo.hapi.dao.TestDao;
 import com.neo.hapi.dao.my.HapCodeMyDao;
 import com.neo.hapi.entity.HapCode;
 import com.neo.hapi.entity.HapUserAccount;
-import com.neo.hapi.entity.Test;
 import com.neo.hapi.service.HapUserAccoutService;
 
 @RestController
@@ -19,8 +17,6 @@ import com.neo.hapi.service.HapUserAccoutService;
 public class HapUserAccoutController {
 	@Autowired
 	private HapUserAccoutService  hapUserAccoutService;
-	@Autowired
-	private TestDao  testDao;
 	@Autowired
 	private HapCodeMyDao  hapCodeMyDao;
 	
@@ -43,16 +39,7 @@ public class HapUserAccoutController {
 		System.err.println("添加成功");
 	}
 	
-	@RequestMapping("/findTest")
-	public List<Test> findTest(){
-	return testDao.findAll();
-		
-	}
-	@RequestMapping("/find")
-	public List<Test> find(){
-	return testDao.find(null);
-		
-	}
+	
 	
 	@RequestMapping("/findMy")
 	public List<HapCode> findMy(){
