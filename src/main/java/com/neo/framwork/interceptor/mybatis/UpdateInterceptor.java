@@ -1,4 +1,4 @@
-package com.neo.framwork.mybatis;
+package com.neo.framwork.interceptor.mybatis;
 
 import java.util.Properties;
 
