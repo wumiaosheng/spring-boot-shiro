@@ -15,7 +15,7 @@ import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 
 import com.neo.shiro.MyShiroRealm;
 
-@Configuration
+//@Configuration
 public class ShiroConfig {
 	@Bean
 	public ShiroFilterFactoryBean shirFilter(SecurityManager securityManager) {
