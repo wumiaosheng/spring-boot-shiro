@@ -45,4 +45,14 @@ public class HapUserAccoutServiceImpl implements HapUserAccoutService{
 		map.put("enable", "1");
 		return hapUserAccountDao.find(map);
 	}
+
+	@Override
+	public HapUserAccount login(Map map) {
+		// TODO Auto-generated method stub
+		List<HapUserAccount> list=hapUserAccountDao.find(map);
+		if(list!=null&&list.size()>0){
+			return list.get(0);
+		}
+		return null;
+	}
 }
