@@ -24,8 +24,10 @@ spring:
       
   thymeleaf:
        cache: false
-       #mode: LEGACYHTML5
-   
+       mode: LEGACYHTML5
+server:
+  port: 8080
+  context-path: /shiro  
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml,classpath:mapper/my/*.xml  #注意：一定要对应mapper映射xml文件的所在路径

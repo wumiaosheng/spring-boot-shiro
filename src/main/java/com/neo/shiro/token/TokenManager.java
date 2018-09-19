@@ -48,6 +48,15 @@ public class TokenManager {
 		return getToken();
 	}
 	
+	
+	/**
+	 * 获取当前用户ID
+	 * @return
+	 */
+	public static Long getUserId(){
+		return getToken()==null?null:getToken().getId();
+	}
+	
 
 
 	

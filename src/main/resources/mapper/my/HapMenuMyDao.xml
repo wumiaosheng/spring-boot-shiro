@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neo.hapi.dao.my.HapMenuMyDao">
+	
+	 <select id="findPermissionByUserId" resultType="java.lang.String">
+  		select p.url from Hap_user_Account hua
+  		join  hap_user_role hur on  hur.user_Id=hua.id 
+  		join hap_role hr on hr.id=hur.role_Id
+  		join hap_role_menu hrm on hrm.role_Id=hr.id
+  		join hap_menu hm on hm.id=hrm.menu_Id
+  		<where>
+	  		<if test="userId!=null and userId>0">
+	  		 and  hua.id =#{userId} 
+	  		</if>
+  		</where>
+		
+     </select>
+</mapper>
