@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootShiroApplication {
 
 	public static void main(String[] args) {
-		System.out.println("2345678hfg23456");
+		System.out.println("2345678hfgdffff23456");
 		SpringApplication.run(SpringBootShiroApplication.class, args);
 	}
 }
