@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootShiroApplication {
 
 	public static void main(String[] args) {
+		System.err.println("34567890");
 		SpringApplication.run(SpringBootShiroApplication.class, args);
 	}
 }
