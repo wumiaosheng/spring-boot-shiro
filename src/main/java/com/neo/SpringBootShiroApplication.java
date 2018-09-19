@@ -12,6 +12,7 @@ public class SpringBootShiroApplication {
 
 	public static void main(String[] args) {
 		System.out.println("2345678hfgdffff23456");
+		System.err.println("234567890");
 		SpringApplication.run(SpringBootShiroApplication.class, args);
 	}
 }
